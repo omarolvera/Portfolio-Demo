@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hero-section {
+            min-height: 60vh;
+            background: linear-gradient(120deg, #232946 0%, #0052cc 100%);
+            color: #fff !important;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(35, 41, 70, 0.7);
+            z-index: 1;
+        }
+
+        .hero-section h1,
+        .hero-section p,
+        .hero-section .btn {
+            color: #fff !important;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        .hero-avatar {
+            border: 5px solid #fff;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+        }
+
+        .modal-header .close {
+            color: #232946;
+            opacity: 1;
+            text-shadow: none;
+            background: transparent !important;
+            border: none;
+            font-size: 2rem;
+            transition: color 0.2s, background 0.2s;
+        }
+
+        .modal-header .close:hover, .modal-header .close:focus {
+            color: #e63946;
+            background: transparent !important;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Olvera | Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-white">
+        <div class="container text-center">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-4 hero-avatar" alt="Omar Olvera" width="140" height="140">
+            <h1 class="display-4 font-weight-bold">Omar Olvera</h1>
+            <p class="lead mb-4">Senior Software Engineer &bull; 15+ Years Experience</p>
+            <a href="#projects" class="btn btn-outline-light btn-lg mr-2">Project Gallery</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h2 class="mb-3">About Me</h2>
+                <p>
+                    I am a passionate and results-driven software engineer with over 15 years of experience architecting, developing, and delivering scalable web and cloud solutions. My expertise spans full-stack development, DevOps, and leading agile teams to success. I thrive on solving complex problems and am committed to continuous learning and innovation.
+                </p>
+                <ul>
+                    <li>Expert in JavaScript, TypeScript, Python, and Java</li>
+                    <li>Cloud-native development (AWS, Azure)</li>
+                    <li>DevOps, CI/CD, and automation</li>
+                    <li>Mentoring and technical leadership</li>
+                </ul>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=400&h=400&facepad=2" class="img-fluid rounded shadow" alt="Omar at work">
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">Project Gallery</h2>
+            <div class="row" id="project-gallery">
+                <!-- Project cards will be injected here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="" alt="" class="img-fluid mb-3" style="border-radius: 12px;">
+            <p class="project-details"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section id="contact" class="container py-5" style="background: linear-gradient(120deg, #232946 0%, #0052cc 100%); color: #fff; border-radius: 16px;">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="card shadow border-0" style="background: rgba(35,41,70,0.85); color: #fff;">
+                    <div class="card-body">
+                        <h2 class="mb-4 text-center">Contact Me</h2>
+                        <form id="contact-form" autocomplete="off" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control bg-light text-dark" id="name" required style="width:100%;">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control bg-light text-dark" id="email" required style="width:100%;">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control bg-light text-dark" id="phone" style="width:100%;">
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control bg-light text-dark" id="message" rows="4" required style="width:100%;"></textarea>
+                                <div class="invalid-feedback"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <div id="form-messages" class="mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2024 Omar Olvera. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
