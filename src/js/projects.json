@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Enterprise Analytics Dashboard",
+      "description": "A real-time dashboard for visualizing business KPIs and analytics.",
+      "details": "This dashboard integrates with multiple data sources (SQL, NoSQL, REST APIs) and provides interactive charts, user management, and export features. Built with React, D3.js, and Node.js. Features include drill-down analytics, exportable reports, and role-based access.",
+  "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "title": "AI Chatbot Platform",
+      "description": "A scalable chatbot platform for automating customer support.",
+      "details": "The platform leverages NLP and machine learning to provide 24/7 support for e-commerce businesses. Features include conversation analytics, multi-language support, and seamless integration with Slack and Messenger. Built with Python, TensorFlow, and Vue.js.",
+  "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "title": "Mobile Banking App",
+      "description": "A secure mobile app for personal banking and payments.",
+      "details": "The app offers biometric authentication, instant notifications, and budgeting tools. Developed using Flutter and integrated with secure RESTful APIs for real-time transactions. Includes spending analytics and card management.",
+  "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "title": "DevOps Automation Suite",
+      "description": "A suite of tools for automating CI/CD pipelines.",
+      "details": "Automates infrastructure provisioning, deployment, and monitoring using Docker, Kubernetes, and GitHub Actions. Includes a dashboard for pipeline visualization and alerting, plus Slack notifications and rollback support.",
+  "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80"
+    }
+  ]
+}
